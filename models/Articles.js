@@ -25,7 +25,7 @@ let ArticleSchema = new Schema({
     },
 
     slug: {
-        type: Sting
+        type: String
     },
 
     //comments is an object that stores a Note id

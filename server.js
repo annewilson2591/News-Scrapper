@@ -7,7 +7,7 @@ let exphbs = require('express-handlebars');
 //let cheerio = require('cheerio');
 
 //require all models
-//let db = require('./models');
+let db = require('./models');
 
 let PORT = process.env.PORT || 3000;
 
