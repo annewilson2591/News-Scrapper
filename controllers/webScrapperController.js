@@ -5,8 +5,9 @@ let db = require('../models');
 
 //mongoose config
 mongoose.Promise = Promise;
-//mongoose.connect("MONGODB heroku link")
-
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds145916.mlab.com:45916/heroku_53scp3b2", {
+    useMongoClient: true
+});
 let mongooseConnection = mongoose.connection;
 
 mongooseConnection.on('error', console.error.bind(console, 'connection error:'));
